@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    private float spawnRate = 1.0f;
+
     [SerializeField]
     private List<GameObject> targets;
-    private float spawnRate = 1.0f;
 
     // Start is called before the first frame update
     void Start()
