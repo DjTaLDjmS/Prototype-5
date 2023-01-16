@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI gameOverText;
     [SerializeField]
     private Button restartButton;
+    [SerializeField]
+    private GameObject titleScreen;
 
     public bool isGameActive;
 
@@ -63,6 +65,8 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
+
+        titleScreen.gameObject.SetActive(false);
     }
 
     public void GameOver()
