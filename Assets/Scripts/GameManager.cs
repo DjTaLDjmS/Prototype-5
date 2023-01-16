@@ -56,12 +56,13 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    public void StartGame()
+    public void StartGame(int difficulty)
     {
         // Put variables initialisations before
         // the StartCoroutine
         isGameActive = true;
         score = 0;
+        spawnRate /= difficulty;
 
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
