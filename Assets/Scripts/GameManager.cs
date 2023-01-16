@@ -12,12 +12,17 @@ public class GameManager : MonoBehaviour
     private List<GameObject> targets;
     [SerializeField]
     private TextMeshProUGUI scoreText;
+    [SerializeField]
+    private TextMeshProUGUI gameOverText;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnTarget());
         score = 0;
+        UpdateScore(0);
+
+        gameOverText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
