@@ -274,6 +274,7 @@ MonoBehaviour:
   targets: []
   scoreText: {fileID: 0}
   gameOverText: {fileID: 0}
+  restartButton: {fileID: 0}
   isGameActive: 0
 --- !u!1 &170076733
 GameObject:
@@ -387,7 +388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &374380860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1205,6 +1206,7 @@ MonoBehaviour:
   targets: []
   scoreText: {fileID: 0}
   gameOverText: {fileID: 0}
+  restartButton: {fileID: 0}
   isGameActive: 0
 --- !u!1 &1919250700
 GameObject:
@@ -1242,6 +1244,7 @@ MonoBehaviour:
   - {fileID: 2933238204200879701, guid: f63191991667bb34983dea32a4ec4da6, type: 3}
   scoreText: {fileID: 35603559}
   gameOverText: {fileID: 2101023747}
+  restartButton: {fileID: 374380861}
   isGameActive: 0
 --- !u!4 &1919250702
 Transform:
